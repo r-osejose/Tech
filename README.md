@@ -1,2 +1,2 @@
 # Tech
-Html,Css,Tailwind CSs,Js
+Html,Css,Tailwind-Css,Js
