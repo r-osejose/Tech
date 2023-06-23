@@ -1,2 +1,2 @@
 # Tech
-Html,Css,Tailwind-Css,Js
+Frontend Technologies : Html,Css,Tailwind-Css,Js,Angular
