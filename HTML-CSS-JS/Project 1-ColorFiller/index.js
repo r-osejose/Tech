@@ -3,7 +3,7 @@ const btn = document.getElementById('btn');
 const color =document.querySelector(".color");
 
 btn.addEventListener('click', function(){
-//get random number between 0-3
+
   const randomNumber = getRandomNumber();
   console.log(randomNumber);
 

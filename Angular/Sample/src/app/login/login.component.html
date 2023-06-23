@@ -1,0 +1,12 @@
+<!-- Username: <input type="text" name="username"> -->
+<!-- Password: <input type="password" name="password"> -->
+
+<!-- Password: <input type="password" name="password" value="{{password}}"> //Interpolation -->
+
+<small *ngIf="invalidLogin">{{errorMessage}}</small>
+<div>
+Username: <input type="text" name="username" [(ngModel)]="username" > <!--2-way data binding-->
+Password: <input type="password" name="password" [(ngModel)]= "password">
+
+<button (click)="handleLogin()">Login</button> <!-- Event binding -->
+</div>

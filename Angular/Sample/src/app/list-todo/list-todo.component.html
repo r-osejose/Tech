@@ -1,0 +1,20 @@
+<div class="container">
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Description</th>
+            <th>Target date</th>
+            <th>Is completed?</th>
+    </tr>
+    </thead>
+    <tbody> <!--let and of are keywords-->
+        <tr *ngFor="let todo of todos"> <!--'todo' is a variable od 'todos'-->
+            <th>{{todo.id}}</th>
+            <th>{{todo.description}}</th>
+            <th>{{todo.target | date}}</th>
+            <th>{{todo.done}}</th>
+        </tr>
+</tbody>
+</table>
+</div>
