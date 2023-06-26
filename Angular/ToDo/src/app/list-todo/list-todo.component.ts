@@ -17,11 +17,10 @@ export class Todo{
 export class ListTodoComponent implements OnInit {
 
   todos = [
-    new Todo(1,"Study angular",new Date(),false),
-    new Todo(2,"Become expert in angular",new Date(),false),
-    new Todo(3,"Study springboot",new Date(),false),
-    new Todo(4,"Study java",new Date(),false),
-    new Todo(5,"Study javascript",new Date(),false),
+    new Todo(1,"Html",new Date(),false),
+    new Todo(2,"Css",new Date(),false),
+    new Todo(3,"Tailwind Css",new Date(),false),
+    new Todo(4,"Angular",new Date(),false),
 
     // {id:1, description:"Study angular"},
     // {id:2, description:"Become expert in angular"},
