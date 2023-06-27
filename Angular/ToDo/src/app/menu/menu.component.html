@@ -4,12 +4,12 @@
         <div><a href="https://www.in28minutes.com" class="navbar-brand">
             RoseTodo</a></div>
         <ul class="navbar-nav">
-            <li><a routerLink="/Welcome/Rose" class="nav-link">Home</a></li>
-            <li><a routerLink="/Todo" class="nav-link">Todos</a></li>
+            <li><a *ngIf="hardcodedAuthenticationService.isUserLoggedIn()" routerLink="/Welcome/Rose" class="nav-link">Home</a></li>
+            <li><a *ngIf="hardcodedAuthenticationService.isUserLoggedIn()" routerLink="/Todo" class="nav-link">Todos</a></li>
         </ul>
         <ul class="navbar-nav navbar-collapse justify-content-end">
-            <li><a routerLink="/Login" class="nav-link">Login</a></li>
-            <li><a routerLink="/Logout" class="nav-link">Logout</a></li>
+            <li><a *ngIf="!hardcodedAuthenticationService.isUserLoggedIn()" routerLink="/Login" class="nav-link">Login</a></li>
+            <li><a *ngIf="hardcodedAuthenticationService.isUserLoggedIn()" routerLink="/Logout" class="nav-link">Logout</a></li>
         </ul>
     </nav>
 </header>
