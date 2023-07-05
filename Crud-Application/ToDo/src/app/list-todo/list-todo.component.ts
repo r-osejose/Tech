@@ -16,7 +16,7 @@ export class Todo{
 
 export class ListTodoComponent implements OnInit {
 
-  todos = [
+  todos:Todo[] = [
     new Todo(1,"Html",new Date(),false),
     new Todo(2,"Css",new Date(),false),
     new Todo(3,"Tailwind Css",new Date(),false),
